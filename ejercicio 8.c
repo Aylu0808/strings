@@ -11,23 +11,17 @@ Luego de finalizar el ingreso, mostrar en pantalla cuál es el primer nombre en 
 
 int main ()
 {
-    char nombres;
-    char fin[3]={'F','I','N'};
-    
-    
+    char nombres[30];
+
     for(;;){
         
-        printf("Ingerse un nombre:");
-        scanf("%s",&nombres);
-        
-        if (nombres == fin ){
-            
-            printf("Se salio del bucle");
-            break;
-        }
-        
-       
-        
-    }
+    printf("Ingerse un nombre:");
+    fgets(nombres, 30, stdin);
     
+    nombres[strcspn(nombres, "\r\n")] = 0;
+    
+    if(strcmp(nombres, "FIN") == 0) break;
+    
+    }
+ 
 }
