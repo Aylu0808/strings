@@ -9,23 +9,45 @@ Mostrar en pantalla si son iguales o no, es decir, si tienen las mismas letras e
 
 int main()
 {
-    char palabras[20];//Se declaran las variables
-    char palabras2[20];
+    char palabra[20];//Se declaran las variables
+    char palabra2[20];
     int i=0;
-
-    printf("Ingrese el primer string: ");
-    scanf("%s",palabras);
-    printf("Ingrese el segundo string: ");
-    scanf("%s",palabras2);    
+    int j=0;
+    int a=0;
+    int h=0;
     
-    if(palabras[i]==palabras2[i]){ //Compara los dos strings
-        
-        printf("Los strings son iguales");
-    }
-    else
-    {
-        printf("No son iguales");
+    printf("Ingrese el primer string: ");//Se ingressan las palabras
+    scanf("%s",palabra);
+    printf("Ingrese el segundo string: ");
+    scanf("%s",palabra2);  
+    
+    	
+	while(palabra[i] != '\0'){ //Se comparan los trings
+		
+		if(palabra[i] == palabra2[i]){ 
+			a++;
+		}
+		i++;
+		a++; 
+	}
+	
+	while(palabra2[j] != '\0'){   //Se compara para saber si son iguales
+		
+		if(palabra[j] == palabra2[j]){ 
+			a++;
+		}
+		j++;
+		h++;
+	}
+	
 
-    }
-
+	if(a == h && a == h){ //Si se cumplen esto son iguales
+	    
+		printf("Son iguales");
+	}
+	else
+	{
+		printf("No son iguales"); 
+}
+      
 }
