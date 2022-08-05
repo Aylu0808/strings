@@ -19,13 +19,17 @@ int main() {
     scanf("%s",nombre);
     
     if(strcmp(nombre,"FIN") == 0){
+     
         strcpy(minimo, mensaje);
     }
-    else{
+    else
+    {
         if(s == 0){
+         
         strcpy(minimo, nombre);
     }
-    else{
+    else
+    {
         if(strcmp(nombre, minimo) < 0)
         {
             strcpy(minimo, nombre);
@@ -34,8 +38,9 @@ int main() {
     }
     
     s++;
-  } while (strcmp(nombre,"FIN") != 0);
+  } 
+     while (strcmp(nombre,"FIN") != 0);
     
-    printf("%s",minimo);
+     printf("%s",minimo);
  
 }
