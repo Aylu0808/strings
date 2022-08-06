@@ -169,6 +169,8 @@ int main()
          }
        }
     if(z==0){
-    printf( "La letra que mas se repite es la %c",magicogonzales[a] );}
+    printf( "La letra que mas se repite es la %c",cont[a] );
+}
+
     
 }
