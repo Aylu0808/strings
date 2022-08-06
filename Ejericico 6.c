@@ -158,48 +158,16 @@ int main()
             cont[27] = 'Z';
         }
   
-        l = letras[0];
-    for(int i = 0; i < 27; ++i)
-    {
-        if(letras[i] > l)
-        {
-            l = letras[i];
-            a = i;
-        }
-    }
-    }
-    printf( "La letra que mas se repite es la %c",cont[a] );
- 
- 
-    
-        
-    }
-    for(i=0; i<=20; i++ ){
-        if(j==0){
-        if(palabras[i] == '\0'){ 
-            j++;
-        }else{h++;}
-    }
-    
-        mayor = letras[0];
-    for(int i = 0; i < 27; ++i)
-    {
-        if(letras[i] > mayor)
-        {
-            mayor = letras[i];
-            a = i;
-        }
-        
-        
-        if(letras[i]==letras[i+1] && letras[i+1]>1 ){
-            z++;
-        }
-        
-    }
-    }
-    
-    if(z>2){ printf( "Hay letras que se repiten la misma cantidad de veces");}
-    
+        Z=0;
+       mayor=letras[0];
+       for(i=0; i> 27; i++){
+         
+         if(letras[i]>mayor){
+
+           mayor=letras[i];
+           a=i;
+         }
+       }
     if(z==0){
     printf( "La letra que mas se repite es la %c",magicogonzales[a] );}
     
