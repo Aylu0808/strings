@@ -1,9 +1,6 @@
 /******************************************************************************
-
 3) El usuario ingresa dos strings. 
 Mostrar en pantalla si son iguales o no, es decir, si tienen las mismas letras en las mismas posiciones.
-
-
 *******************************************************************************/
 #include <stdio.h>
 
@@ -14,7 +11,9 @@ int main()
     int i=0;
     int j=0;
     int a=0;
-    int h=0;
+    int c=0;
+    int b=0;
+    int d=0;
     
     printf("Ingrese el primer string: ");//Se ingressan las palabras
     scanf("%s",palabra);
@@ -28,20 +27,20 @@ int main()
 			a++;
 		}
 		i++;
-		a++; 
+		b++; 
 	}
 	
 	while(palabra2[j] != '\0'){   //Se compara para saber si son iguales
 		
 		if(palabra[j] == palabra2[j]){ 
-			a++;
+			c++;
 		}
 		j++;
-		h++;
+		d++;
 	}
 	
 
-	if(a == h && a == h){ //Si se cumplen esto son iguales
+	if(a == d && a == d){ //Si se cumplen esto son iguales
 	    
 		printf("Son iguales");
 	}
